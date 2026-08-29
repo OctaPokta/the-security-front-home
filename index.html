@@ -87,10 +87,31 @@
     .brand-mark::after { width: 1px; height: 15px; }
     .brand-mark i { width: 5px; height: 5px; background: currentColor; border-radius: 50%; }
 
+    .top-actions { display: flex; align-items: center; gap: 18px; }
     .top-note {
       color: var(--muted);
       font-size: .82rem;
       letter-spacing: .08em;
+    }
+    .contact-link {
+      min-height: 39px;
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 0 15px;
+      border: 1px solid rgba(229, 187, 103, .42);
+      border-radius: 999px;
+      color: var(--gold-light);
+      background: rgba(229, 187, 103, .06);
+      font-size: .8rem;
+      font-weight: 800;
+      text-decoration: none;
+      transition: background .2s ease, border-color .2s ease;
+    }
+    .contact-link:hover, .contact-link:focus-visible {
+      background: rgba(229, 187, 103, .14);
+      border-color: var(--gold);
+      outline: none;
     }
 
     main { min-height: calc(100vh - 82px); }
@@ -373,7 +394,10 @@
       <span class="brand-mark" aria-hidden="true"><i></i></span>
       <span>החזית · כלים להבנת ישראל</span>
     </a>
-    <div class="top-note">מפה · אנשים · בחירות</div>
+    <div class="top-actions">
+      <div class="top-note">מפה · אנשים · בחירות</div>
+      <a class="contact-link" href="https://t.me/TheSecurityFrontWW3" target="_blank" rel="noopener noreferrer" aria-label="יצירת קשר עם החזית הביטחונית בטלגרם">יצירת קשר <span aria-hidden="true">↗</span></a>
+    </div>
   </header>
 
   <main>
@@ -412,7 +436,7 @@
 
   <footer class="credits">
     <span><strong>מבית החזית הביטחונית</strong> · כלים אינטראקטיביים להבנת ישראל</span>
-    <span>© <span id="year"></span> · החזית הביטחונית</span>
+    <span>© <span id="year"></span> · החזית הביטחונית · <a href="https://t.me/TheSecurityFrontWW3" target="_blank" rel="noopener noreferrer">יצירת קשר בטלגרם</a></span>
   </footer>
 
   <script>
